@@ -61,6 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   split_array = []
   split_array = holiday_hash.keys.split
+  binding.pry
   split_array.each do |holiday|
     split_array.capitalize.join
   split_array
