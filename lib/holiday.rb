@@ -59,8 +59,9 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.split.capitalize.join
-  
+  split_array = holiday_hash.split
+  split_array.capitalize.join
+  split_array
 end
 
 def all_holidays_with_bbq(holiday_hash)
