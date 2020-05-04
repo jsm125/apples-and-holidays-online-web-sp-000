@@ -75,7 +75,7 @@ end
 
 holiday_hash.map do |season, holiday|
   holiday_hash.map do |holiday, supply|
-    holiday 
+    holiday if supply
     
 
 
