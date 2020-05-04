@@ -59,11 +59,11 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  split_array = []
-  split_array = holiday_hash.keys.split
-  split_array.each do |holiday|
-    split_array.capitalize.join
-  split_array
+  holiday_hash.each do |season, holiday|
+    puts "#{season.capitalize}:"
+    holidays.each do |holiday, supplies|
+      puts "  #{holiday.to_s.split("_").map{|x| x.capitalize.}.join(" ")}: #{supplies.join(", ")}
+  end
 end
 end
 
